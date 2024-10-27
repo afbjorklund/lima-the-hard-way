@@ -1,0 +1,8 @@
+kubeadm
+kubelet
+kubectl
+*.img
+*.tgz
+*.tar.gz
+*.amd64
+*.arm64
