@@ -168,7 +168,7 @@ $ du -hs *.img
 qemu-system-x86_64 -accel kvm -smp 1 -m 1024 \
                    -hda disk.img -cdrom seed.img \
                    -net nic -net user,hostfwd=tcp::2222-:22 \
-                   -bios /usr/share/qemu/OVMF.fd
+                   -bios /usr/share/qemu/OVMF.fd # <- firmware
 ```
 
 ### ssh
