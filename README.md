@@ -108,7 +108,7 @@ Note: feel free to replace default username "ubuntu" with "debian" below.
 `disk.img`
 
 ```shell
-qemu-img create -f qcow2 -b base.img disk.img
+qemu-img create -F qcow2 -b base.img -f qcow2 disk.img
 qemu-img resize disk.img 20g
 ```
 
