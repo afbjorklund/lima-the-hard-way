@@ -26,7 +26,7 @@ Optional:
 - wget
 - sha256sum
 - gpg
-- genisoimage
+- genisoimage (or `mkisofs` from "cdrtools")
 
 Note: You can use [wcurl](https://curl.se/wcurl/) instead of `wget`, see [curl vs wget](https://daniel.haxx.se/docs/curl-vs-wget.html).
 
