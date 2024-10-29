@@ -165,7 +165,7 @@ $ du -hs *.img
 ```
 
 ```shell
-qemu-system-x86_64 -accel kvm -smp 1 -m 1024 \
+qemu-system-x86_64 -accel kvm -M q35 -cpu host -smp 1 -m 1024 \
                    -hda disk.img -cdrom seed.img \
                    -net nic -net user,hostfwd=tcp::2222-:22 \
                    -bios /usr/share/qemu/OVMF.fd # <- firmware
