@@ -168,7 +168,7 @@ $ du -hs *.img
 qemu-system-x86_64 -accel kvm -M q35 -cpu host -smp 1 -m 1024 \
                    -hda disk.img -cdrom seed.img \
                    -net nic -net user,hostfwd=tcp::2222-:22 \
-                   -bios /usr/share/qemu/OVMF.fd # <- firmware
+                   -bios /usr/share/OVMF/OVMF_CODE.fd # <- efi
 ```
 
 ### ssh
