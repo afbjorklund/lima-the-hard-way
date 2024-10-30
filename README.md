@@ -115,7 +115,7 @@ qemu-img resize disk.img 20g
 If using VZ instead of QEMU, the images have to be converted:
 
 ```shell
-# convert images to raw, when using virtualization.framework
+# convert images to raw, when using Virtualization.framework
 qemu-img convert base.img base.raw
 cp -c base.raw disk.raw
 truncate -s 20g disk.raw
