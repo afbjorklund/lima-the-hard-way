@@ -112,6 +112,15 @@ qemu-img create -F qcow2 -b base.img -f qcow2 disk.img
 qemu-img resize disk.img 20g
 ```
 
+If using VZ instead of QEMU, the images have to be converted:
+
+```shell
+# convert images to raw, when using virtualization.framework
+qemu-img convert base.img base.raw
+cp -c base.raw disk.raw
+truncate -s 20g disk.raw
+```
+
 ### cloud-init
 
 <https://cloudinit.readthedocs.io/en/latest/howto/run_cloud_init_locally.html>
@@ -170,6 +179,9 @@ qemu-system-x86_64 -accel kvm -M q35 -cpu host -smp 1 -m 1024 \
                    -net nic -net user,hostfwd=tcp::2222-:22 \
                    -bios /usr/share/OVMF/OVMF_CODE.fd # <- efi
 ```
+
+Note: it is possible to use "vfkit", instead of "qemu-system-*"
+See <https://github.com/crc-org/vfkit> for details (it uses VZ)
 
 ### ssh
 

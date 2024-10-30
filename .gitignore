@@ -2,6 +2,8 @@ kubeadm
 kubelet
 kubectl
 *.img
+*.raw
+efi-variable-store
 *.tgz
 *.tar.gz
 *.amd64
