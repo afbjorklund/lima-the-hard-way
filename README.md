@@ -257,7 +257,7 @@ sudo install -D containerd.service /usr/local/lib/systemd/system/containerd.serv
 
 ```shell
 wget https://github.com/opencontainers/runc/releases/download/v1.1.14/runc.amd64
-wget https://github.com/opencontainers/runc/releases/download/v1.1.14/runc.amd64.asc
+wget https://github.com/opencontainers/runc/releases/download/v1.1.14/runc.sha256sum
 ```
 
 install -m 755 runc.amd64 /usr/local/sbin/runc
@@ -275,7 +275,7 @@ wget https://github.com/containernetworking/plugins/releases/download/v1.5.1/cni
 
 ```shell
 wget https://github.com/containerd/nerdctl/releases/download/v1.7.7/nerdctl-1.7.7-linux-amd64.tar.gz
-wget https://github.com/containerd/nerdctl/releases/download/v1.7.7/SHA256SUMS{,.asc}
+wget https://github.com/containerd/nerdctl/releases/download/v1.7.7/SHA256SUMS -O - | grep nerdctl-1.7.7-linux-amd64.tar.gz >nerdctl-1.7.7-linux-amd64.tar.gz.sha256sum
 ```
 
 `sudo tar Cxzvf /usr/local/bin nerdctl-1.7.7-linux-amd64.tar.gz`
