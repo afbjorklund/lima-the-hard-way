@@ -180,7 +180,7 @@ qemu-system-x86_64 -accel kvm -M q35 -cpu host -smp 1 -m 1024 \
                    -bios /usr/share/OVMF/OVMF_CODE.fd # <- efi
 ```
 
-Note: it is possible to use "vfkit", instead of "qemu-system-*"
+Note: it is possible to use "vfkit", instead of "qemu-system-*"<br />
 See <https://github.com/crc-org/vfkit> for details (it uses VZ)
 
 ### ssh
@@ -308,7 +308,7 @@ wget https://raw.githubusercontent.com/moby/buildkit/v0.16.0/examples/systemd/sy
 wget https://raw.githubusercontent.com/moby/buildkit/v0.16.0/examples/systemd/system/buildkit.service
 ```
 
-sudo install -D buildkit.socket /usr/local/lib/systemd/system/buildkit.socket
+sudo install -D buildkit.socket /usr/local/lib/systemd/system/buildkit.socket<br />
 sudo install -D buildkit.service /usr/local/lib/systemd/system/buildkit.service
 
 ```shell
