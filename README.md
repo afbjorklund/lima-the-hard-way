@@ -292,8 +292,8 @@ rm buildkit-v0.16.0.linux-amd64.sbom.json
 `sudo tar Cxzvf /usr/local buildkit-v0.16.0.linux-amd64.tar.gz`
 
 ```shell
-wget -nv https://raw.githubusercontent.com/moby/buildkit/v0.16.0/examples/systemd/system/buildkit.socket
-wget -nv https://raw.githubusercontent.com/moby/buildkit/v0.16.0/examples/systemd/system/buildkit.service
+wget https://raw.githubusercontent.com/moby/buildkit/v0.16.0/examples/systemd/system/buildkit.socket
+wget https://raw.githubusercontent.com/moby/buildkit/v0.16.0/examples/systemd/system/buildkit.service
 ```
 
 sudo install -D buildkit.socket /usr/local/lib/systemd/system/buildkit.socket
