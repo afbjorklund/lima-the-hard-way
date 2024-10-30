@@ -284,10 +284,10 @@ wget https://github.com/containerd/nerdctl/releases/download/v1.7.7/SHA256SUMS -
 
 ```shell
 wget https://github.com/moby/buildkit/releases/download/v0.16.0/buildkit-v0.16.0.linux-amd64.tar.gz
-wget https://github.com/moby/buildkit/releases/download/v0.16.0/buildkit-v0.16.0.linux-amd64.sbom.json
-jq -r '.subject[]|(.digest.sha256+"  "+.name)' <buildkit-v0.16.0.linux-amd64.sbom.json >buildkit-v0.16.0.linux-amd64.tar.gz.sha256sum
-rm buildkit-v0.16.0.linux-amd64.sbom.json
+wget https://github.com/moby/buildkit/releases/download/v0.16.0/buildkit-v0.16.0.linux-amd64.sbom.json && jq -r '.subject[]|(.digest.sha256+"  "+.name)' <buildkit-v0.16.0.linux-amd64.sbom.json >buildkit-v0.16.0.linux-amd64.tar.gz.sha256sum && rm buildkit-v0.16.0.linux-amd64.sbom.json
 ```
+
+Note: for some reason, buildkit doesn't provide a normal digest
 
 `sudo tar Cxzvf /usr/local buildkit-v0.16.0.linux-amd64.tar.gz`
 
