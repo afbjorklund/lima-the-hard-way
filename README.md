@@ -454,10 +454,10 @@ EOF
 #### init
 
 ```shell
-RELEASE="$(curl -sSL https://dl.k8s.io/release/stable-1.txt)"
+KUBERNETES_VERSION="$(curl -sSL https://dl.k8s.io/release/stable-1.txt)"
 
-sudo kubeadm config images list --kubernetes-version=${RELEASE}
-sudo kubeadm config images pull --kubernetes-version=${RELEASE}
+sudo kubeadm config images list --kubernetes-version=${KUBERNETES_VERSION}
+sudo kubeadm config images pull --kubernetes-version=${KUBERNETES_VERSION}
 ```
 
 ```text
