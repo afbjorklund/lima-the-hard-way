@@ -269,7 +269,7 @@ sudo install -D containerd.service /usr/local/lib/systemd/system/containerd.serv
 
 ```shell
 wget https://github.com/opencontainers/runc/releases/download/v1.1.14/runc.amd64
-wget https://github.com/opencontainers/runc/releases/download/v1.1.14/runc.sha256sum
+wget https://github.com/opencontainers/runc/releases/download/v1.1.14/runc.sha256sum && grep runc.amd64 <runc.sha256sum >runc.amd64.sha256sum && rm runc.sha256sum
 ```
 
 install -m 755 runc.amd64 /usr/local/sbin/runc
