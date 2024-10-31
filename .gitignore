@@ -2,9 +2,13 @@ kubeadm
 kubelet
 kubectl
 *.img
+*.iso
+*.qcow2
 *.raw
 efi-variable-store
 *.tgz
 *.tar.gz
 *.amd64
 *.arm64
+*-linux-amd64
+*-linux-arm64
