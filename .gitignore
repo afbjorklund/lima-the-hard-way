@@ -12,3 +12,5 @@ efi-variable-store
 *.arm64
 *-linux-amd64
 *-linux-arm64
+*.sha256
+*.sha256sum
