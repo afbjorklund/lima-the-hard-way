@@ -1,0 +1,11 @@
+44280	cni-plugins-linux-amd64-v1.3.0.tgz
+47100	cni-plugins-linux-amd64-v1.5.1.tgz
+17996	crictl-v1.31.0-linux-amd64.tar.gz
+56932	kubeadm
+55068	kubectl
+75108	kubelet
+78120	buildkit-v0.16.0.linux-amd64.tar.gz
+46788	containerd-1.7.22-linux-amd64.tar.gz
+9700	kind-linux-amd64
+9572	nerdctl-1.7.7-linux-amd64.tar.gz
+10836	runc.amd64
