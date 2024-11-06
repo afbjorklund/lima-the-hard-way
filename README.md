@@ -415,7 +415,7 @@ EOF
 
 # configure CNI
 sudo mkdir -p /etc/cni/net.d
-sudo tee /etc/cni/net.d/10-containerd-net.conflist
+sudo tee /etc/cni/net.d/10-containerd-net.conflist <<EOF
 {
   "cniVersion": "1.0.0",
   "name": "containerd-net",
