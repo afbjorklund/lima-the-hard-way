@@ -34,7 +34,7 @@ Note: You can use [bsdsum](https://github.com/afbjorklund/bsdsum) `sha256sum` in
 
 ## Limitations
 
-There will be **no** native virtualizaion drivers used here, like VZ or WSL2.
+There will be **no** native virtualization drivers used here, like VZ or WSL2.
 
 There will be **no** rootless containers, only the basic rootful containers.
 
