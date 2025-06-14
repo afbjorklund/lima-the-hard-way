@@ -183,9 +183,6 @@ qemu-system-x86_64 -accel kvm -M q35 -cpu host -smp 1 -m 1024 \
 Note: it is possible to use "vfkit", instead of "qemu-system-*"<br />
 See <https://github.com/crc-org/vfkit> for details (it uses VZ)
 
-Another option is <https://github.com/containers/krunkit> (HVF).<br />
-It needs a network socket to be present in `/tmp/network.sock`.
-
 ### ssh
 
 The above setup (cloud-config.yaml) will use password login:
